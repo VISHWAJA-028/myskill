@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            background-color: white;
+             color: #333;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h2>JavaScript Display Options Example</h2>
+
+<button onclick="showAlert()">Alert</button><br><br>
+<button onclick="showConfirm()">Confirm</button><br><br>
+<button onclick="showPrompt()">Prompt</button><br><br>
+<button onclick="showConsole()">Console Log</button><br><br>
+<button onclick="showWrite()">Document Write</button><br><br>
+
+<script>
+
+function showAlert() {
+    alert("This is an Alert box!");
+}
+
+function showConfirm() {
+    let result = confirm("Do you like JavaScript?");
+    
+    if(result) {
+        alert("You clicked OK");
+    } else {
+        alert("You clicked Cancel");
+    }
+}
+
+function showPrompt() {
+    let name = prompt("Enter your name:");
+    if(name != null) {
+        alert("Hello " + name);
+    }
+}
+
+function showConsole() {
+    console.log("This message is displayed in the console.");
+    alert("Check the Console (Press F12)");
+}
+
+function showWrite() {
+    document.write("This text is written using document.write()");
+}
+
+</script>
+
+</body>
+</html>
