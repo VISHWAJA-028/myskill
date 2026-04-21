@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button click</title>
+    <style>
+    body {
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 100px;
+            background:honeydew;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Button Click and Double Click Example</h2>
+        <button onclick="singleClick()">Click Me</button><br><br>
+         <button ondblclick="doubleClick()">Double Click Me</button>
+          <div id="output"></div>
+
+    <script>
+        function singleClick() {
+            document.getElementById("output").innerHTML = "Button Clicked Once!";
+        }
+
+        function doubleClick() {
+            document.getElementById("output").innerHTML = "Button Double Clicked!";
+        }
+    </script>
+
+</body>
+</html>
